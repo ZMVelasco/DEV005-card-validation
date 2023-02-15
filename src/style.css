@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffc3c3;
+  flex-flow: column;
+  padding-bottom: 60px;
+  border-radius: 15px;
+}
+.container form {
+  width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10 15px rgba(0, 0, 0, 0.1);
+}
+.container form .inputBox {
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 4px;
+  color: #999;
+  width: 100%;
+  border: 2px solid #a0dde0;
+  border-radius: 10px;
+}
+#cardNumber {
+  margin-bottom: 10px;
+}
+#btnValidate {
+  width: 200px;
+  height: 40px;
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(171, 102, 255, 1) 0%,
+    rgba(116, 182, 247, 1) 90%
+  );
+  border: 1px solid #ffc3c3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.cardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
