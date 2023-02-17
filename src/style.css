@@ -21,6 +21,7 @@
   border-radius: 15px;
 }
 .container form {
+  margin-top: 40px;
   width: 600px;
   background: #fff;
   padding: 20px;
@@ -32,10 +33,10 @@
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 4px;
-  color: #999;
+  color: black;
   width: 100%;
-  border: 2px solid #a0dde0;
-  border-radius: 10px;
+  border-bottom: 2px solid #a0dde0;
+  border-radius: 5px;
 }
 #cardNumber {
   margin-bottom: 10px;
@@ -57,9 +58,30 @@
   margin-top: 10px;
 }
 .cardContainer {
-  width: 100%;
+  position: relative;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, blueviolet, deeppink);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+#cardChip {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

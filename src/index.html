@@ -9,33 +9,31 @@
     <header></header>
     <main></main>
     <img src="logoTuttiFrutti.png" width="300px" height="200px" />
-    <h1>Nutrición Clínica</h1>
-    <h4>
-      Previo a agendar consulta es necesario validar la tarjeta con la que se
-      realizará el pago
-    </h4>
-    <article>
-      <p>
-        Para validar la tarjeta de crédito, ingresa el número de la tarjeta y el
-        nombre del titular tal como aparece en la tarjeta.
-      </p>
-    </article>
+    <br />
+    <!--Remove when style is added -->
+    <img src="progressbar.png" width="60%" height="60%" />
     <section class="container">
+      <!-- Pink container -->
       <div class="cardContainer">
+        <!-- Card front -->
         <div class="images">
-          <img src="cardChip.png" width="30px" height="25" />
+          <img src="cardChip.png" width="30px" height="25" id="cardChip" />
         </div>
       </div>
       <form>
         <label for="cardNumber">Número de tarjeta</label>
+        <!-- Card number input box-->
         <input
           class="inputBox"
           type="text"
           id="cardNumber"
           maxlength="16"
           placeholder="Ingresa el número de tu tarjeta"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');"
         />
+        <!-- Last line allows numbers only-->
         <label for="cardName">Nombre del titular</label>
+        <!-- Card name input box-->
         <input
           class="inputBox"
           type="text"
