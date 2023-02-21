@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffc3c3;
   flex-flow: column;
   padding-bottom: 60px;
   border-radius: 15px;
@@ -70,7 +69,7 @@
   margin-top: 20px;
   border-radius: 20px;
   backface-visibility: hidden;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
   padding: 20px;
   transform: perspective(1000px) rotateY(0deg);
   transition: transform 0.4s ease-out;
@@ -84,4 +83,9 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1200' height='800' preserveAspectRatio='none' viewBox='0 0 1200 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1223%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c315 C 80%2c288.8 240%2c175.4 400%2c184 C 560%2c192.6 640%2c357.8 800%2c358 C 960%2c358.2 1120%2c219.6 1200%2c185L1200 800L0 800z' fill='rgba(250%2c 130%2c 141%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c698 C 60%2c642 180%2c413 300%2c418 C 420%2c423 480%2c706 600%2c723 C 720%2c740 780%2c489.4 900%2c503 C 1020%2c516.6 1140%2c733.4 1200%2c791L1200 800L0 800z' fill='rgba(255%2c 186%2c 143%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1223'%3e%3crect width='1200' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: center;
 }
