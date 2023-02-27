@@ -22,6 +22,11 @@ const validator = {
       return false;
     }
   },
+  maskify: (creditCardNumber) => {
+    const maskedCardNumber =
+      creditCardNumber.slice(0, -4).replace(/./g, "#") +
+      creditCardNumber.slice(-4);
+    return maskedCardNumber;
+  },
 };
-
 export default validator;
