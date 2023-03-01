@@ -16,15 +16,50 @@
     </div>
     <!-- Pink container -->
     <section class="container">
+      <!-- Card container -->
       <div class="cardContainer">
-        <!-- Card front -->
-        <div class="images">
+        <div class="chip">
           <img src="cardChip.png" width="30px" height="25" id="card-chip" />
         </div>
+        <div class="user-data">
+          <span class="kredit" id="card-number-display"></span>
+          <span class="kredit" id="card-name-display"></span>
+        </div>
+        <div class="card-brand">
+          <img
+            src="amex.png"
+            width="80px"
+            height="50px"
+            id="amex-logo"
+            style="display: none"
+            ;
+          />
+          <img
+            src="visa.png"
+            width="60px"
+            height="25px"
+            id="visa-logo"
+            style="display: none"
+          />
+          <img
+            src="mastercard.png"
+            width="70px"
+            height="40px"
+            id="mastercard-logo"
+            style="display: none"
+          />
+          <img
+            src="discover.png"
+            width="75px"
+            height="25px"
+            id="discover-logo"
+            style="display: none"
+          />
+        </div>
       </div>
+      <!-- Card number input box-->
       <form>
         <label for="cardNumber">NÚMERO DE TARJETA</label>
-        <!-- Card number input box-->
         <input
           class="inputBox"
           type="text"
