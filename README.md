@@ -4,7 +4,7 @@
 <h2>¿Cómo funciona?</h2>
 <p>El usuario debe ingresar el número de su tarjeta de crédito o débito, el sistema validará si el número ingresado es válido o no, y si es válido, se mostrará el tipo de tarjeta (Visa, Mastercard, American Express, etc.) y el número de la tarjeta con los dígitos ocultos, excepto los últimos 4 dígitos.</p>
 <h2>Vista del proyecto</h2>
-<img src="cvview.png" alt="Card Validation View"/>
+<img src="./cvview.png" alt="Card Validation View"/>
 <h2>Tecnologías utilizadas</h2>
 <ul>
 <li>HTML</li>
